@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://res.pm/sitemap.xml
+Host: https://res.pm
