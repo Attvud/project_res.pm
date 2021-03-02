@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-519c85e5f15486164f2b.js"
+    "url": "webpack-runtime-28ae8464c5528056dc01.js"
   },
   {
     "url": "framework-b17a64ad725e0b3c1338.js"
@@ -42,11 +42,11 @@ self.__precacheManifest = [
     "url": "aceecd74-b95e382f6d3583550ff4.js"
   },
   {
-    "url": "app-da3f275d13731bd7e4b4.js"
+    "url": "app-e43348d5334bd85caec3.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "43de722ae65d7a62661e0e565f9b6aaf"
+    "revision": "ba4917523f7db85911de6b84dd46d22a"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-241020a1cf7d0f317bbe.js"
@@ -57,10 +57,41 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "5e0d8173edb4084cf757134e632dc590"
+    "revision": "a055cde852755b60d7f3269f172db4bd"
   },
   {
     "url": "polyfill-6c74939eb57bbd57b6a0.js"
+  },
+  {
+    "url": "d99a64e8ab5703df30f0e0f475283d4270bcd548-d01ba4174eb50a038bee.js"
+  },
+  {
+    "url": "8f06df63790ccae6715eac2fe158efb9ccdbe7dd-d7778a98aaa1271dc66d.js"
+  },
+  {
+    "url": "component---src-projects-res-pm-components-pages-resume-js-a8c02cf22977d11cab4f.js"
+  },
+  {
+    "url": "page-data/resume/page-data.json",
+    "revision": "c82077d9d804cb0a11cbba9bfd5d6f3a"
+  },
+  {
+    "url": "component---src-projects-res-pm-components-pages-portfolio-js-15728494aff3f3b8107e.js"
+  },
+  {
+    "url": "page-data/portfolio/page-data.json",
+    "revision": "c8f840bbd2a5dfdc74460b4a6ad44f26"
+  },
+  {
+    "url": "page-data/sq/d/1419746806.json",
+    "revision": "aa608b1ce47660fd5daf3abe455d4b56"
+  },
+  {
+    "url": "component---src-projects-res-pm-components-pages-contacts-js-da6c2c2f256d2617620c.js"
+  },
+  {
+    "url": "page-data/contacts/page-data.json",
+    "revision": "4fed99336d688dedbc03b5b1031e297e"
   },
   {
     "url": "manifest.webmanifest",
@@ -156,7 +187,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-da3f275d13731bd7e4b4.js`))) {
+  if (!resources || !(await caches.match(`/app-e43348d5334bd85caec3.js`))) {
     return await fetch(event.request)
   }
 
