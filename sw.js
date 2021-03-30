@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-fce94fc255868558a1fb.js"
+    "url": "webpack-runtime-5644e958c1250827fa95.js"
   },
   {
     "url": "framework-151d16a262f39a1b5ad0.js"
@@ -43,7 +43,7 @@ self.__precacheManifest = [
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "41045ad0fe92baad22a632d18eed087f"
+    "revision": "4020bec4022dd0beed91db34b963fca5"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-a5364d144488098a841a.js"
@@ -63,10 +63,10 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "4e96796a892816011a71cba20fa9c818"
+    "revision": "b8185828a91282bf7417a5e50c3b6ba7"
   },
   {
-    "url": "component---src-components-project-res-pm-pages-portfolio-js-353e4437421abe24cb12.js"
+    "url": "component---src-components-project-res-pm-pages-portfolio-js-4de68359c937b558eb21.js"
   },
   {
     "url": "page-data/portfolio/page-data.json",
@@ -74,7 +74,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/sq/d/1440594108.json",
-    "revision": "ec91c914906224e4b2c73122903e4c45"
+    "revision": "e843dd4fa238f8fc4a6a03507568b9c2"
   },
   {
     "url": "component---src-components-project-res-pm-pages-contacts-js-81910b8292cba2a4e6b0.js"
