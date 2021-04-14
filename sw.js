@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-ef9e6a1ef698407f6ecb.js"
+    "url": "webpack-runtime-da2104fc3b2b64e8e25d.js"
   },
   {
     "url": "framework-151d16a262f39a1b5ad0.js"
@@ -39,11 +39,11 @@ self.__precacheManifest = [
     "url": "aceecd74-7467fb6d32e5d7e8b87a.js"
   },
   {
-    "url": "app-f03b98dd3c0b4f16d81a.js"
+    "url": "app-b1b019d19403430285c2.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "833850fde6858fd4bc5829d4a234d186"
+    "revision": "1e2fab79f9f159b3638889eb1a44d8cc"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-a5364d144488098a841a.js"
@@ -55,7 +55,10 @@ self.__precacheManifest = [
     "url": "0713c727f5b0e8716554ec15f68c3ff12d02f28b-8fb3d12d6f7bc26d0c3a.js"
   },
   {
-    "url": "component---src-components-project-res-pm-pages-resume-js-fa48c90719fcb5832fc4.js"
+    "url": "1c5c4af9247acd23e8acbe8ca95968ab2acc93f3-d12b1da359c2e9d8d7d2.js"
+  },
+  {
+    "url": "component---src-components-project-res-pm-pages-resume-js-e70f551d979f4eb64d44.js"
   },
   {
     "url": "page-data/resume/page-data.json",
@@ -63,10 +66,10 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "1e590ae933d121b18c294a5ea641cb95"
+    "revision": "531723baa41689d6bfd51508b8bad593"
   },
   {
-    "url": "component---src-components-project-res-pm-pages-portfolio-js-26b9a44cbc9ee68226ee.js"
+    "url": "component---src-components-project-res-pm-pages-portfolio-js-a3606a7888cc227cfdf7.js"
   },
   {
     "url": "page-data/portfolio/page-data.json",
@@ -177,7 +180,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-f03b98dd3c0b4f16d81a.js`))) {
+  if (!resources || !(await caches.match(`/app-b1b019d19403430285c2.js`))) {
     return await fetch(event.request)
   }
 
