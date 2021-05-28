@@ -27,38 +27,38 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-6c2f4bc4b459ac5fb326.js"
+    "url": "webpack-runtime-f001b517e13b254182db.js"
   },
   {
     "url": "framework-151d16a262f39a1b5ad0.js"
   },
   {
-    "url": "styles.ae8fe8b3e3e2c76b36b2.css"
+    "url": "styles.59b58907afe0a4590fb3.css"
   },
   {
-    "url": "aceecd74-7467fb6d32e5d7e8b87a.js"
+    "url": "aceecd74-3a144fb9339de6f965b0.js"
   },
   {
-    "url": "app-b1b019d19403430285c2.js"
+    "url": "app-d989e93d74e8d221f249.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "2f821fa84c085e58d37803a98fc63cd7"
+    "revision": "c8c6e8a404542acb061199a393d159c9"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-a5364d144488098a841a.js"
   },
   {
-    "url": "polyfill-81fc0e0cace1acae621b.js"
+    "url": "polyfill-d11fce74a104841521bf.js"
   },
   {
-    "url": "0713c727f5b0e8716554ec15f68c3ff12d02f28b-8fb3d12d6f7bc26d0c3a.js"
+    "url": "577477b920a9076f452a569ab4a092147990b70a-42bdb444d150af4693ee.js"
   },
   {
-    "url": "1c5c4af9247acd23e8acbe8ca95968ab2acc93f3-a2db4cf858cfc376c57c.js"
+    "url": "56de8e718238004b7aee2cf983283d721fcf433c-747191e9f3b22fe8fe31.js"
   },
   {
-    "url": "component---src-components-project-res-pm-pages-resume-js-e70f551d979f4eb64d44.js"
+    "url": "component---src-components-project-res-pm-pages-resume-js-135714468a8de4325f9b.js"
   },
   {
     "url": "page-data/resume/page-data.json",
@@ -66,10 +66,10 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "6006bf0aae8d492a94ca96de3429dc16"
+    "revision": "69d2d583af00f2d2e8887ecd9a623001"
   },
   {
-    "url": "component---src-components-project-res-pm-pages-portfolio-js-6943fe7e5d4dcb39eff4.js"
+    "url": "component---src-components-project-res-pm-pages-portfolio-js-db84a544b48062aa1d68.js"
   },
   {
     "url": "page-data/portfolio/page-data.json",
@@ -80,7 +80,7 @@ self.__precacheManifest = [
     "revision": "72f0f55c34a9b9eb3f6bd067d0d5a12a"
   },
   {
-    "url": "component---src-components-project-res-pm-pages-contacts-js-81910b8292cba2a4e6b0.js"
+    "url": "component---src-components-project-res-pm-pages-contacts-js-9cfdbf6b81cd03a73683.js"
   },
   {
     "url": "page-data/contacts/page-data.json",
@@ -180,7 +180,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-b1b019d19403430285c2.js`))) {
+  if (!resources || !(await caches.match(`/app-d989e93d74e8d221f249.js`))) {
     return await fetch(event.request)
   }
 
