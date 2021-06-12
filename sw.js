@@ -27,20 +27,20 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-06c3d81c5e01fc5e09ee.js"
+    "url": "webpack-runtime-e545a5f4b55994f0ba34.js"
   },
   {
     "url": "framework-151d16a262f39a1b5ad0.js"
   },
   {
-    "url": "styles.8c9d1deaf4b0ae0802f1.css"
+    "url": "styles.8126cafd4d299a296a85.css"
   },
   {
-    "url": "app-443a244a02755ea5df2b.js"
+    "url": "app-24f552a618389f70bbda.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "229e99c58962c2ac1055375de3161e9e"
+    "revision": "ae9c70eb47121b4b271e7be41df8433a"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-5d8f6f101d3a7b3822f3.js"
@@ -49,13 +49,13 @@ self.__precacheManifest = [
     "url": "polyfill-81fc0e0cace1acae621b.js"
   },
   {
-    "url": "b84ed7e41dc01b88e6459bb98ae462c5df355fc6-8e7f78cbd3710b856110.js"
+    "url": "b84ed7e41dc01b88e6459bb98ae462c5df355fc6-06056e99a798e2b5571f.js"
   },
   {
     "url": "39f65ee59cfde5b1253e04e6aae3dbad88f56144-853e9dc9579578e68ee3.js"
   },
   {
-    "url": "component---src-components-project-res-pm-pages-resume-js-b221e695816d844f3f5c.js"
+    "url": "component---src-components-project-res-pm-pages-resume-js-61d0d636bac6946a0c62.js"
   },
   {
     "url": "page-data/resume/page-data.json",
@@ -63,10 +63,10 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "e846d09c5cbd2bd74fc1c92c3fae7acc"
+    "revision": "91865e60b1122588e4e895f2ec0ca0fe"
   },
   {
-    "url": "component---src-components-project-res-pm-pages-portfolio-js-4e64a4cefe3af908d916.js"
+    "url": "component---src-components-project-res-pm-pages-portfolio-js-06ec95e9bb8762c92053.js"
   },
   {
     "url": "page-data/portfolio/page-data.json",
@@ -77,7 +77,7 @@ self.__precacheManifest = [
     "revision": "487387d54be4a0bec1b39b3e3abfe35e"
   },
   {
-    "url": "component---src-components-project-res-pm-pages-contacts-js-9a1734c3f4f37f284f18.js"
+    "url": "component---src-components-project-res-pm-pages-contacts-js-02c01f6bf1db62fb1b91.js"
   },
   {
     "url": "page-data/contacts/page-data.json",
@@ -177,7 +177,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-443a244a02755ea5df2b.js`))) {
+  if (!resources || !(await caches.match(`/app-24f552a618389f70bbda.js`))) {
     return await fetch(event.request)
   }
 
