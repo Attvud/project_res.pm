@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-acb332b58c66efda2ca6.js"
+    "url": "webpack-runtime-f60bf7d4be9cf2d21a0c.js"
   },
   {
     "url": "styles.92256399b93857c5ded5.css"
@@ -36,11 +36,11 @@ self.__precacheManifest = [
     "url": "framework-151d16a262f39a1b5ad0.js"
   },
   {
-    "url": "app-b8959068168468536a07.js"
+    "url": "app-5a5c95421ce74ec5422c.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "5fa8e9669d3169d6b6b093696334ebc3"
+    "revision": "7237cd98470fed1d34ade6e23a48051a"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-5d8f6f101d3a7b3822f3.js"
@@ -66,10 +66,10 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "79ec087e6f08ae7923a4121368c7d089"
+    "revision": "4fb9e2466b9b76c3c72fa0b9bcce13e5"
   },
   {
-    "url": "component---src-components-project-res-pm-pages-portfolio-js-6942ad999a4343848636.js"
+    "url": "component---src-components-project-res-pm-pages-portfolio-js-06e114790f674a785200.js"
   },
   {
     "url": "page-data/portfolio/page-data.json",
@@ -180,7 +180,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-b8959068168468536a07.js`))) {
+  if (!resources || !(await caches.match(`/app-5a5c95421ce74ec5422c.js`))) {
     return await fetch(event.request)
   }
 
