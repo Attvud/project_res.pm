@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-92b0bfdc68ddc0ae9646.js"
+    "url": "webpack-runtime-14d64d3035ed7729e0a8.js"
   },
   {
     "url": "styles.421204e529d0f1bfb827.css"
@@ -36,11 +36,11 @@ self.__precacheManifest = [
     "url": "framework-151d16a262f39a1b5ad0.js"
   },
   {
-    "url": "app-c189193df2443c33d27b.js"
+    "url": "app-1cb3e2be32d162cb02c5.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "5d5fa54f470686ca2abfa5610e34f841"
+    "revision": "b017105e2d81cdc99193165d24817b42"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-5d8f6f101d3a7b3822f3.js"
@@ -49,10 +49,10 @@ self.__precacheManifest = [
     "url": "polyfill-81fc0e0cace1acae621b.js"
   },
   {
-    "url": "82ed133c92f08e8b7200ac8eb8188a716f5df6a6-f4f72ae4a989d2f27044.js"
+    "url": "82ed133c92f08e8b7200ac8eb8188a716f5df6a6-95edf280385c8400c0e7.js"
   },
   {
-    "url": "component---src-components-project-res-pm-pages-resume-js-d3353e467c37874f30a3.js"
+    "url": "component---src-components-project-res-pm-pages-resume-js-1a1eaa3ffda9986ef0a5.js"
   },
   {
     "url": "page-data/resume/page-data.json",
@@ -60,10 +60,10 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "013397fa7c4e65371f9e3d7ba661480a"
+    "revision": "f65eb9f9a8019ee47fbd2cf6496c6e42"
   },
   {
-    "url": "component---src-components-project-res-pm-pages-portfolio-js-a2f6662feaf8f207fd24.js"
+    "url": "component---src-components-project-res-pm-pages-portfolio-js-8fae2ff92468522983a0.js"
   },
   {
     "url": "page-data/portfolio/page-data.json",
@@ -74,7 +74,7 @@ self.__precacheManifest = [
     "revision": "ff4c9013d1fc2a3d0a3501a943783b97"
   },
   {
-    "url": "component---src-components-project-res-pm-pages-contacts-js-42265b158749d55eeaa6.js"
+    "url": "component---src-components-project-res-pm-pages-contacts-js-4dc43ed72d61f7efc03c.js"
   },
   {
     "url": "page-data/contacts/page-data.json",
@@ -82,7 +82,7 @@ self.__precacheManifest = [
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "90f8f9fba37c296d2a8275b83b24ff74"
+    "revision": "dbf95ab762e532839f260c9783bf06f8"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -174,7 +174,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-c189193df2443c33d27b.js`))) {
+  if (!resources || !(await caches.match(`/app-1cb3e2be32d162cb02c5.js`))) {
     return await fetch(event.request)
   }
 
