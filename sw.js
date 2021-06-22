@@ -27,20 +27,20 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-7fd90ddfa3acb2f95db9.js"
+    "url": "webpack-runtime-5f633e55328ee8036a3d.js"
   },
   {
-    "url": "styles.10b947ddf39fb028a66d.css"
+    "url": "styles.4588d1e7a5bbde0f624a.css"
   },
   {
     "url": "framework-151d16a262f39a1b5ad0.js"
   },
   {
-    "url": "app-9bc9a7fc33e57bd87d0a.js"
+    "url": "app-87b4f07d7821464ef65a.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "d833c21dc49b6d2f0b8aa5347f05d401"
+    "revision": "e5d2a06372349c3169819ae5f315edc1"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-5d8f6f101d3a7b3822f3.js"
@@ -49,10 +49,10 @@ self.__precacheManifest = [
     "url": "polyfill-81fc0e0cace1acae621b.js"
   },
   {
-    "url": "b84ed7e41dc01b88e6459bb98ae462c5df355fc6-73d6ecc9b217afe73595.js"
+    "url": "82ed133c92f08e8b7200ac8eb8188a716f5df6a6-f7a169c9b17464183a17.js"
   },
   {
-    "url": "component---src-components-project-res-pm-pages-resume-js-a0d9883e1e33a93e21a2.js"
+    "url": "component---src-components-project-res-pm-pages-resume-js-7d0e1fa95f0b2ca830b6.js"
   },
   {
     "url": "page-data/resume/page-data.json",
@@ -60,10 +60,10 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "e079583cad723db834dd4a7b083a7f63"
+    "revision": "6a35290f7b2c02370d78a0dd20f9cd62"
   },
   {
-    "url": "component---src-components-project-res-pm-pages-portfolio-js-e50e17d1e9c5c601afd1.js"
+    "url": "component---src-components-project-res-pm-pages-portfolio-js-9f474e068ada7ca68d0b.js"
   },
   {
     "url": "page-data/portfolio/page-data.json",
@@ -74,7 +74,7 @@ self.__precacheManifest = [
     "revision": "ff4c9013d1fc2a3d0a3501a943783b97"
   },
   {
-    "url": "component---src-components-project-res-pm-pages-contacts-js-26578d035458a62351ad.js"
+    "url": "component---src-components-project-res-pm-pages-contacts-js-156963ac4be61969a531.js"
   },
   {
     "url": "page-data/contacts/page-data.json",
@@ -174,7 +174,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-9bc9a7fc33e57bd87d0a.js`))) {
+  if (!resources || !(await caches.match(`/app-87b4f07d7821464ef65a.js`))) {
     return await fetch(event.request)
   }
 
