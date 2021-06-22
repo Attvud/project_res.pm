@@ -40,18 +40,10 @@ self.__precacheManifest = [
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "33496f2674c7906b414c13ce19dae852"
+    "revision": "b2731ded3a591c72095130db297ef594"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-5d8f6f101d3a7b3822f3.js"
-  },
-  {
-    "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "0282e2b86db56eb397d1111699dffeba"
-  },
-  {
-    "url": "page-data/app-data.json",
-    "revision": "6c50881c45eb88f18a4324353114181e"
   },
   {
     "url": "polyfill-81fc0e0cace1acae621b.js"
@@ -64,14 +56,18 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/resume/page-data.json",
-    "revision": "211c6ce2853542910a8907a004c134b9"
+    "revision": "98bbd7538c1e17cff4773b82af9189be"
+  },
+  {
+    "url": "page-data/app-data.json",
+    "revision": "b8f76d2550f97a9dc80f753e06f3b6d0"
   },
   {
     "url": "component---src-components-project-res-pm-pages-portfolio-js-9f474e068ada7ca68d0b.js"
   },
   {
     "url": "page-data/portfolio/page-data.json",
-    "revision": "f7954f6018640630aa708740c0fa3ca2"
+    "revision": "9e7c559f2a73bc8d6fb8949f5c18d440"
   },
   {
     "url": "page-data/sq/d/970290989.json",
@@ -82,7 +78,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/contacts/page-data.json",
-    "revision": "4af1e2ec6c3598f784c4d55594ba5e5a"
+    "revision": "d30952e5a9a2570b6ef04ccc4039c1ad"
   },
   {
     "url": "manifest.webmanifest",
