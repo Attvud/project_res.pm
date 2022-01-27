@@ -27,20 +27,20 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-76939e96599a60c978c9.js"
+    "url": "webpack-runtime-15362e39680a3b41d690.js"
   },
   {
-    "url": "styles.a20b3b6425d402330fc4.css"
+    "url": "styles.03424859b1a9521d90f5.css"
   },
   {
-    "url": "framework-f152c8c6d28cfe60f026.js"
+    "url": "framework-eb6707136bf5d1d92bd5.js"
   },
   {
-    "url": "app-571d1885efc39386b6bf.js"
+    "url": "app-f4e88c1f2409f67945e8.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "091b7a05c47164f48098cff82bcaa46e"
+    "revision": "dcece898f7d7be213f4a05007d1602b1"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-0742cb082bd1dffd3b66.js"
@@ -60,10 +60,10 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "ce23085e7994ae85c8cd0b2dde23be9f"
+    "revision": "5664d54ef23ec1600177ef82c2d9e337"
   },
   {
-    "url": "component---src-components-project-res-pm-pages-portfolio-js-d5ee258a8b90b935cd0a.js"
+    "url": "component---src-components-project-res-pm-pages-portfolio-js-57bc650997ce137f260a.js"
   },
   {
     "url": "page-data/portfolio/page-data.json",
@@ -82,7 +82,7 @@ self.__precacheManifest = [
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "e5f73018a3f1bd7c3395638c7be82cb9"
+    "revision": "7ce63dde7fa04c0b249845a9fdb72ffc"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -108,6 +108,24 @@ const MessageAPI = {
 
   clearPathResources: event => {
     event.waitUntil(idbKeyval.clear())
+
+    // We detected compilation hash mismatch
+    // we should clear runtime cache as data
+    // files might be out of sync and we should
+    // do fresh fetches for them
+    event.waitUntil(
+      caches.keys().then(function (keyList) {
+        return Promise.all(
+          keyList.map(function (key) {
+            if (key && key.includes(`runtime`)) {
+              return caches.delete(key)
+            }
+
+            return Promise.resolve()
+          })
+        )
+      })
+    )
   },
 
   enableOfflineShell: () => {
@@ -174,7 +192,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-571d1885efc39386b6bf.js`))) {
+  if (!resources || !(await caches.match(`/app-f4e88c1f2409f67945e8.js`))) {
     return await fetch(event.request)
   }
 
